@@ -1,5 +1,6 @@
  import axios from 'axios'
 import router from 'next/router'
+import Image from 'next/image'
  import styles from '../../styles/feed.module.css'
  import { useRouter } from 'next/router'
  import Routes from '../../components/routes.js'
@@ -14,7 +15,7 @@ export const Feed = ({pageNumber, articles}) => {
                <div key={index} className={styles.post}>
                    <h1 onClick={() => (window.location.href = article.url)}>{article.title}</h1>
                    <p>{article.description}</p>
-                   {!!article.urlToImage && <img src={article.urlToImage} />}
+                <Image onClick={() => (window.location.href =article.url )} src={article.urlToImage} />
 
                </div>
            ))}
