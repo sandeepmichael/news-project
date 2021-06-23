@@ -1,0 +1,10 @@
+.main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.main h1 h3 {
+  margin-top: -50px;
+}
