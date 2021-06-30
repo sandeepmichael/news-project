@@ -4,6 +4,10 @@
     align-items: center;
     flex-direction: column;
   }
+  .newsimage {
+    width: 400px;
+    height: 400px;
+  }
   .post {
     width: 500px;
     margin-bottom: 25px;
